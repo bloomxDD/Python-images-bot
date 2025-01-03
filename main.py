@@ -7,7 +7,7 @@ from colorama import init, Fore, Style
 
 from images import *
 
-TOKEN = 'enter youre token here'
+TOKEN = input('Enter your token: ')
 
 intents = discord.Intents.all()
 intents.members = True
