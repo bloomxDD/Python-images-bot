@@ -5,5 +5,5 @@
 3. run install.bat
 4. open main.py and paste your bot token into the TOKEN = '' line
 5. then save and run start.bat
-
+  
 # Idk why I code this I was bored lol
