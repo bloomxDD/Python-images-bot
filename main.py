@@ -7,7 +7,7 @@ from colorama import init, Fore, Style
 
 from images import *
 
-TOKEN = input('Enter your token: ')
+TOKEN = input(Fore.BLUE + 'Enter your token > ')
 
 intents = discord.Intents.all()
 intents.members = True
@@ -37,7 +37,7 @@ async def on_ready():
     activity_name = '!help'
     await client.change_presence(activity=discord.Activity(type=activity_type, name=activity_name))
 
-    print('I am ready for the use')
+    print(Fore.BLUE + 'I am ready for the use')
     print(' ')
 
 
@@ -100,7 +100,6 @@ async def commands(ctx):
 async def help(ctx):
     help = '**Prefix:** !\n' \
            '**Commands:** !commands\n' \
-           '_coming soon_'
     embed = discord.Embed(title='Hi bruh, how can i help you?', description=help, color=110011)
     await ctx.channel.send(embed=embed)
 
